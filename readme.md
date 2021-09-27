@@ -6,20 +6,20 @@
 
 有没有办法一边打游戏一边更新GitHub呢？
 
-有了，快在首页上放「Dota2卡」吧！
+有了，在首页上放「Dota2卡」吧！
 
 
 ## 使用方法
 
-只要在你的GitHub的个人简介仓库里加入一张图片，像是这样——
+只要在你的GitHub的个人简介仓库里加入一行链接，像是这样——
 
 ```text
-https://dota.librian.net/api/d?id=335153592&要=比赛,比赛时长
+![](https://dota.librian.net/api/d?id=335153592&要=比赛,比赛时长)
 ```
 
-它就会显示成一张SVG图片，像是这样——
+它就会显示成SVG图片——
 
-![https://dota.librian.net/api/d?id=335153592&要=比赛,比赛时长](https://dota.librian.net/api/d?id=335153592&要=比赛,比赛时长)
+![](https://dota.librian.net/api/d?id=335153592&要=比赛,比赛时长)
 
 以后你只要打Dota2它就会自动更新啦！
 
