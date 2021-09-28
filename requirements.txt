@@ -1,7 +1,4 @@
 hrml
-numpy
 jinja2
-PyGithub
 requests
-opencv-python
 azure-functions
