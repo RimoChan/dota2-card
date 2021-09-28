@@ -96,8 +96,12 @@ def 黄泉颤抖(id, 要):
 def 召唤(id, 要):
     要组 = 要.split(',')
     信息, 组 = 黄泉颤抖(id, 要组)
-    a, b = 信息['rank_tier']//10, 信息['rank_tier']%10
-    图 = sget(f'https://www.opendota.com/assets/images/dota2/rank_icons/rank_icon_{a}.png'), sget(f'https://www.opendota.com/assets/images/dota2/rank_icons/rank_star_{b}.png'), sget(信息['avatar'])
+    t = 信息['rank_tier']
+    if t:
+        a, b = t//10, t%10
+        图 = sget(f'https://www.opendota.com/assets/images/dota2/rank_icons/rank_icon_{a}.png'), sget(f'https://www.opendota.com/assets/images/dota2/rank_icons/rank_star_{b}.png'), sget(信息['avatar'])
+    else:
+        图 = sget(f'https://www.opendota.com/assets/images/dota2/rank_icons/rank_icon_0.png'), '', sget(信息['avatar'])
     return 模板.render(
         personaname=信息['personaname'],
         组=zip(要组, 组),
